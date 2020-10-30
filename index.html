@@ -1,0 +1,54 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action="#" onsubmit="return myfunction()">
+            <lable>name: </lable><input type="text" id="name" class="myform"/><br><span id="namespan" style="color: red;
+            size: 32;
+            "></span><br>
+            <lable>email: </lable><input type="email" id="email" class="myform" /><br><span id="emailspan" style="color: red;
+            size: 32;
+            "></span><br>
+            <lable>password: </lable><input type="password" id="password" class="myform" /><br><span id="passwordspan" style="color: red;
+            size: 32;
+            "></span><br>
+            <lable>confirm password: </lable><input type="password" id="cpassword" class="myform" /><br><span id="cpasswordspan" style="color: red;
+            size: 32;
+            "></span><br>
+            <input type="submit" value="register" />
+        </form>
+    </body>
+    <body>
+        <script>
+            function myfunction(){
+            var name = document.getElementById("name").value
+            var email = document.getElementById("email").value
+            var password = document.getElementById("password").value
+            var cpassword = document.getElementById("cpassword").value
+            // var namespan = document.getElementById("namespan").innerHTML = " ** your name is less than 2 or greater than 20 words";
+            if(name==""){
+                document.getElementById("namespan").innerHTML = " ** field is empty";
+                return false;
+            }
+            if(email==""){
+                document.getElementById("emailspan").innerHTML = " ** field is empty";
+                return false;
+            }
+            if(password==""){
+                document.getElementById("passwordspan").innerHTML = " ** field is empty";
+                return false;
+            }
+            if(cpassword==""){
+                document.getElementById("cpasswordspan").innerHTML = " ** field is empty";
+                return false;}
+            }
+            if(cpassword!==password){
+                document.getElementById("cpasswordspan").innerHTML = " ** fiels is not correct or similar to password";
+                return false;}
+            }
+            
+
+        </script>
+    </body>
+</html>
