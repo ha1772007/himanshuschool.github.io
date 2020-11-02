@@ -5,15 +5,22 @@
             var name = promt("enter your name")
         </script>
         <h1>only admin are alowed ristricted for local users <button onclick="admin()">click</button></h1>
+        <input type="text" id="name" placeholder="name"/><br>
+        <input type="text" id="pass" placeholder="password"/>
+        <button onclick="admin()">submit/login</button>
     </head>
     <body><script>
-        function admin(){var name = prompt("enter the coad")
-        var pass = promt("enter the password")
-        if(name == "ha1772007" && pass == "1772007="){
-            alert("coad = #login")
-            window.location.replace("https://github.com/ha1772007/himanshuschool.github.io")
-        }else{
-            alert("coad = #signin")
-        }}
+        function admin(){
+            var name = document.getElementById("name").value;
+            var pass = document.getElementById("pass").value;
+            if(name=="himanshu"){
+                if(pass=="1772007="){
+                    alert("succesfully login")
+                    window.location.replace("https://github.com/ha1772007/himanshuschool.github.io")
+                }
+            }else{
+                alert("name is incorrect")
+            }
+        }
     </script></body>
 </html>
