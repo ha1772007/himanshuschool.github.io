@@ -40,7 +40,36 @@
 /* #f1f1f1 */
 </style>
 </head>
+<style>
+  #header #inner_header ul {
+      background-color: green;
+      color: white;
+      float: left;
+      line-height: 45px;
+      text-align: center;
+      width: 100px;
+  }
+  #header #inner_header ul li{
+      list-style-type: none;
+      text-decoration: none;
+      /* padding: 10px; */
+      padding-right: 20px;
+  }
+  #header #inner_header ul:hover{
+      background-color: red;
+  }
+  #header #inner_header ul:hover #header #inner_header ul li{
+      color: green;
+  }
+</style>
 <body>
+  <div id="header">
+      <center><div id="inner_header">
+          <div><ul>
+              <li><a href="index.html">home</a></li>
+          </ul>
+      </div></center>
+  </div><br><br><br>
 
 <h2>chapter complted </h2>
 <h3>tips for searching</h3>
